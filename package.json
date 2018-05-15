@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "client": "cd client & npm start",
+    "client": "react-scripts start",
     "server": "nodemon server.js",
-    "test": "concurrently --kill-others-on-fail \"npm server\" \"npm client\""
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "concurrently": "^3.5.1",
